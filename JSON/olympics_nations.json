@@ -1200,16 +1200,16 @@
         "drapeau": "https://olympics-statistics.com/media/flagge/ie.png"
     },
     {
-        "nom": "Israel",
-        "periode": "1992 - 2024",
+        "nom": "",
+        "periode": "",
         "statistiques": {},
         "medailles": {
-            "summer": 20,
+            "summer": 0,
             "winter": 0,
-            "gold": 4,
-            "silver": 6,
-            "bronze": 10,
-            "total": 20
+            "gold": 0,
+            "silver": 0,
+            "bronze": 0,
+            "total": 0
         },
         "id": "117",
         "drapeau": "https://olympics-statistics.com/media/flagge/il.png"
