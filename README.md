@@ -59,7 +59,7 @@ Processus global :
 - Enrichissement des données avec les médailles, puis sauvegarde finale au format JSON.
 
 
-🧹 Nettoyage et Transformation des Données :
+🧹 NETTOYAGE ET TRANSFORMATION DES DONNÉES :
 
 🌍 Normalisation des pays :
 
@@ -80,16 +80,13 @@ Un dictionnaire de correspondance (pays_dict) standardise les noms et codes ISO 
 Les données nettoyées sont stockées sous un format JSON uniforme.
 
 
-📊 Visualisation des Données
+📊 VISUALISATION DES DONNÉES
 
 Les visualisations offrent une analyse complète des performances olympiques selon trois axes :
 
 🏃 Athlètes : Analyse individuelle
 🌎 Pays : Comparaison des médailles par pays
 🏅 Sports : Analyse des disciplines et leurs résultats par pays
-
-
-📷 Exemples de visualisations :
 
 
 
