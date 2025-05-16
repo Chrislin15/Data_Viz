@@ -32,9 +32,9 @@ Le projet est structuré en plusieurs étapes successives :
 
 Technologies utilisées :
 
-🐍 Python : Langage de programmation principal
-📚 BeautifulSoup4 : Parsing HTML pour extraire les données à partir des documents HTML
-🌐 Requests : Envoi de requêtes HTTP pour récupérer les pages web
+- Python : Langage de programmation principal
+- BeautifulSoup4 : Parsing HTML pour extraire les données à partir des documents HTML
+- Requests : Envoi de requêtes HTTP pour récupérer les pages web
 
 Processus d'extraction :
 
@@ -42,21 +42,21 @@ Le script collecte les informations des athlètes olympiques depuis le site olym
 
 Structure du script :
 
-📝 extract_basic_info()
-Extraction des informations principales de chaque athlète, telles que prénom, nom, pays (identifié via les drapeaux), et sexe (déterminé par les icônes SVG).
+- extract_basic_info()
+  - Extraction des informations principales de chaque athlète, telles que prénom, nom, pays (identifié via les drapeaux), et sexe (déterminé par les icônes SVG).
 
-🎖️ extract_medal_info()
-Pour chaque athlète, récupération des détails sur les médailles (type et nombre) via des requêtes.
+- extract_medal_info()
+  - Pour chaque athlète, récupération des détails sur les médailles (type et nombre) via des requêtes.
 
-📄 get_athletes_from_page()
-Coordonne l’extraction des athlètes sur une page donnée et gère la navigation entre les pages grâce à la pagination.
+- get_athletes_from_page()
+  - Coordonne l’extraction des athlètes sur une page donnée et gère la navigation entre les pages grâce à la pagination.
 
 Processus global :
 
-🔤 Itération alphabétique sur les noms des athlètes, incluant une catégorie spéciale pour les noms non alphabétiques.
-🌍 Pour chaque lettre, visite des pages, extraction des données des athlètes, puis navigation entre les pages.
-⏳ Application de délais entre les requêtes pour respecter la limitation du serveur.
-📊 Enrichissement des données avec les médailles, puis sauvegarde finale au format JSON.
+- Itération alphabétique sur les noms des athlètes, incluant une catégorie spéciale pour les noms non alphabétiques.
+- Pour chaque lettre, visite des pages, extraction des données des athlètes, puis navigation entre les pages.
+- Application de délais entre les requêtes pour respecter la limitation du serveur.
+- Enrichissement des données avec les médailles, puis sauvegarde finale au format JSON.
 
 
 🧹 Nettoyage et Transformation des Données :
@@ -65,15 +65,15 @@ Processus global :
 
 Un dictionnaire de correspondance (pays_dict) standardise les noms et codes ISO des pays afin de :
 
-🔄 Harmoniser différentes appellations (ex. "Russia")
-🏛️ Gérer les cas historiques ou spécifiques (ex. "Soviet Union")
-🔍 Permettre une recherche bidirectionnelle entre noms et codes via un dictionnaire inversé (codes_pays_dict)
+- Harmoniser différentes appellations (ex. "Russia")
+- Gérer les cas historiques ou spécifiques (ex. "Soviet Union")
+- Permettre une recherche bidirectionnelle entre noms et codes via un dictionnaire inversé (codes_pays_dict)
 
 🔧 Transformation des données : 
 
-🔢 Extraction des identifiants via expressions régulières à partir des URLs
-🎨 Standardisation des médailles (conversion des codes numériques en noms explicites : or, argent, bronze
-🌐 Uniformisation des URLs complètes pour garantir l’accès aux ressources
+- Extraction des identifiants via expressions régulières à partir des URLs
+- Standardisation des médailles (conversion des codes numériques en noms explicites : or, argent, bronze
+- Uniformisation des URLs complètes pour garantir l’accès aux ressources
 
 🗂️ Structure finale :
 
